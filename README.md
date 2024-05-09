@@ -12,6 +12,13 @@ RBE Scorer extensions for OpenTOPAS
 > [!NOTE]
 > The main difference in installing for Debian/Ubuntu and MacOS is the installation paths. 
 
+> [!TIP]
+> Users can install multiple extensions by either:
+> - Copy all the Extension directories into a common global directory, or
+> - Using the `\;` between directory paths e.g., (and see below):
+>
+>      `-DTOPAS_EXTENSIONS_DIR=/MyProject1Extensions/\;/MyProject2Extensions/`
+
 ### Debian
 
 Follow [installation for Debian/Ubuntu](https://opentopas.readthedocs.io/en/latest/getting-started/Debian.html) procedures after and including **step 8.4**. Then:
