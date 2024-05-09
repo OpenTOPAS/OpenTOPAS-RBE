@@ -3,7 +3,8 @@ RBE Scorer extensions for OpenTOPAS
 
   - David Hall. First commit 07/2017.
   - Jan Schuemann. Major revision 11/2019.
-
+  - Jose Ramos-Mendez. Update to OpenTOPAS v4.0/Geant4 v11.1.3 05/2024
+    
 ---
 
 ## Installation.
