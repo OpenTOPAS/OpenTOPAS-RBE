@@ -1,9 +1,71 @@
 RBE Scorer extensions for OpenTOPAS
 ---
 
-Full documentation is found at
+  - David Hall. First commit 07/2017.
+  - Jan Schuemann. Major revision 11/2019.
+
+---
+
+## Installation.
+
+> [!NOTE]
+> The main difference in installing for Debian/Ubuntu and MacOS is the installation paths. 
+
+### Debian
+
+Follow [installation for Debian/Ubuntu](https://opentopas.readthedocs.io/en/latest/getting-started/Debian.html) procedures after and including **step 8.4**. Then:
+
+    $ cd $HOME/Applications/
+
+Clone the repository:
+
+    $ git clone https://github.com/OpenTOPAS/OpenTOPAS-RBE.git
+
+Return to the topas-build directory:
+
+    $ cd $HOME/Applications/TOPAS/OpenTOPAS-build
+
+Repeat `cmake` command by including the `TOPAS_EXTENSIONS_DIR` variable as follows (don't miss the `-D`):
+
+    $ cmake ../OpenTOPAS -DCMAKE_INSTALL_PREFIX=../OpenTOPAS-install -DTOPAS_EXTENSIONS_DIR=$HOME/Applications/OpenTOPAS-RBE
+
+Build:
+
+    $ make -j8 install
+
+### MacOS
+
+Follow [installation for MacOS](https://opentopas.readthedocs.io/en/latest/getting-started/MacOS.html) procedures after and including **step 7.4**. Then:
+
+    $ cd /Applications
+
+Clone the repository:
+
+    $ git clone https://github.com/OpenTOPAS/OpenTOPAS-RBE.git
+
+Return to the topas-build directory:
+
+    $ cd /Applications/TOPAS/OpenTOPAS-build
+
+Repeat `cmake` command by including the `TOPAS_EXTENSIONS_DIR` variable as follows (don't miss the `-D`):
+
+    $ cmake ../OpenTOPAS -DCMAKE_INSTALL_PREFIX=../OpenTOPAS-install -DTOPAS_EXTENSIONS_DIR=/Applications/OpenTOPAS-RBE
+
+Build:
+
+    $ make -j8 install
+    
+---
+
+## Implementation of the models and corresponding references can be found at:  
+
+### :books: Polster, et al., "Extension of TOPAS for the simulation of proton radiation effects considering molecular and cellular endopoints" [doi:10.1088/0031-9155/60/13/5053](doi:10.1088/0031-9155/60/13/5053)
+
+## Full documentation is found at
 
 ### :books: [https://OpenTOPAS.readthedocs.io/en/latest](https://OpenTOPAS.readthedocs.io/en/latest/)
+
+---
 
 These extension scorers require OpenTOPAS version 4.0 or later.
 
