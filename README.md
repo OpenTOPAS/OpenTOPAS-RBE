@@ -88,11 +88,16 @@ properties (dose, LET, etc) to RBE or biological dose, etc.
    . TsV*: Base classes for the scorers
 
 Additionally, the example directory contains an example experiment irradiation
-(experiment.txt) scoring each of the available RBE scorers (rbe_scorers.txt) for
+(`experiment.txt`) scoring each of the available RBE scorers (`rbe_scorers.txt`) for
 V79 cells (`CellLineV79.txt`). V79 cells are used because they are one of the most
 studied cells and biological parameters for all models were available.
-The simulations can be run with "topas run.txt" and analyzed with the provided
-python script.
+
+The simulations can be run with `"topas run.txt"` and analyzed with the provided
+python script. Before running `examples/run.txt` make sure that the directory
+`results/` exists in the `examples/` directory, otherwise, create it with
+
+   cd OpenTOPAS-RBE/examples/
+   mkdir results/
 
 In order to change the experimental setup edit `experiment.txt`_.
 
