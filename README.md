@@ -94,7 +94,7 @@ studied cells and biological parameters for all models were available.
 
 The simulations can be run with `"topas run.txt"` and analyzed with the provided
 python script. Before running `examples/run.txt` make sure that the directory
-`results/` exists in the `examples/` directory, otherwise, create it with
+`results/` exists in the `examples/` directory, otherwise, create it with:
 
    cd OpenTOPAS-RBE/examples/
    mkdir results/
